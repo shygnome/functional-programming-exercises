@@ -26,3 +26,9 @@ foldExpr combine constFn (e1 :+ e2) = combine (foldExpr combine constFn e1) (fol
 foldExpr combine constFn (e1 :- e2) = combine (foldExpr combine constFn e1) (foldExpr combine constFn e2)
 foldExpr combine constFn (e1 :* e2) = combine (foldExpr combine constFn e1) (foldExpr combine constFn e2)
 foldExpr combine constFn (e1 :/ e2) = combine (foldExpr combine constFn e1) (foldExpr combine constFn e2)
+
+
+{- Redefine Evaluate Function -}
+-- fancyEval :: Expr -> Float
+-- fancyEval (C x) = x
+-- fancyeval (e1 :+ e2) = foldExpr (+) fancyEval (e1 :+ e2)
