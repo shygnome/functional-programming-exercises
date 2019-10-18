@@ -47,6 +47,7 @@ iter n f x = f (iter (n-1) f x)
             dan diulang sebanyak n kali. Dengan kata lain fungsi tersebut adalah fungsi yang mengembalikan
             n angka setelah angka yang diberikan sebagai input.
 -}
+succss :: (Eq a, Num a, Enum b) => a -> b -> b
 succss = \n -> iter n succ
 
 {-
