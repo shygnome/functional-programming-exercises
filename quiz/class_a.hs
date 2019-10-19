@@ -15,4 +15,16 @@ quickSort (x:xs) = (quickSort [y | y <- xs, y <= x])
                 ++ [x] ++
                 (quickSort [y | y <- xs, y > x])
 
-{- (4)  -}
+{- (4) jumlahList -}
+jumlahList xs = foldr (+) 0 xs
+
+{- (5) Fungsi misteri -}
+misteri xs ys = concat (map (\x -> map (\y -> (x,y)) ys) xs)
+
+{- (6) primes -}
+primes = sieve [2..]
+    where sieve (x:xs) = x:(sieve [y | y <- xs, y `mod` x /= 0])
+
+{- (7) fungsi flip -}
+-- flip :: (a -> b -> c) -> b -> a -> c
+-- flip f x y = f y x
