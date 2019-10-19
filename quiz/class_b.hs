@@ -21,3 +21,13 @@ merge [] ys         = ys
 merge xs []         = xs
 merge (x:xs) (y:ys) | x < y     = x:merge xs (y:ys)
                     | otherwise = y:merge (x:xs) ys
+
+{- (4) maxList func -}
+maxList (x:xs) = foldl (max) x xs
+
+{- (5) misteri (class_a.hs) -}
+
+{- (6) pytaTriple func -}
+pytaTriple = [(x,y,z) | z <- [5..], y <- [z, z-1..1], x <-[y, y-1..1], x*x + y*y == z*z]
+
+{- (7)-(10) same as (class_a.hs) -}
