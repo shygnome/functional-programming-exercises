@@ -45,3 +45,22 @@ lastPFS = head . reverse
 -- >>> lastPFS "Haskell"
 -- 'l'
 --
+
+{- Soal 4 zcb -}
+
+-- Pemanggilan fungsi zcb t x k , menyatakan bahwa pada waktu t , 
+-- contract ini akan senilai dengan x pada kurs k .
+
+-- one :: Currency -> Contract
+-- -- Receive one unit of currency immediately
+
+-- scaleK :: Float -> Contract -> Contract
+-- -- Acquire specified number of contracts
+
+-- at :: Date -> Contract -> Contract
+-- -- Acquire the contract at specified date
+
+zcb :: Date -> Double -> Currency -> Contract
+zcb t x k =  at t (scaleK x (one k))
+
+{-  -}
