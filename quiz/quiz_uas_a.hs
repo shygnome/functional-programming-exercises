@@ -63,4 +63,17 @@ lastPFS = head . reverse
 zcb :: Date -> Double -> Currency -> Contract
 zcb t x k =  at t (scaleK x (one k))
 
-{-  -}
+{- Soal 5 Penerapan Functional Style -}
+
+-- dataPoints = [1, 2, 3, 4, 5]
+-- xAxis = dataPoints.map((item, index) => {
+--     let temp = new Date();
+--     temp.setMonth(temp.getMonth() + item);
+--     return temp.getMonth() + " " + temp.getYear();
+-- });
+
+-- pseudocode di atas menggunakaan konsep high order function yaitu
+-- mapping pada list yang menerima sebuah function untuk diterapkan
+-- terhadap setiap elemen di dalam list, yaitu untuk memetakan label
+-- bulan untuk Axis X pada grafik.
+
