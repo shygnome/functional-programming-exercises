@@ -77,3 +77,13 @@ zcb t x k =  at t (scaleK x (one k))
 -- terhadap setiap elemen di dalam list, yaitu untuk memetakan label
 -- bulan untuk Axis X pada grafik.
 
+{- Soal 6 Monad/Applicative Functor -}
+
+-- Kelompok kami menggunakan React Hooks yang merupakan Applicative Functor
+-- pada React.
+
+{- Soal 7 Pure Function javascript -}
+
+-- function isRootPath(pathname) {
+--     return pathname === "/";
+-- }
