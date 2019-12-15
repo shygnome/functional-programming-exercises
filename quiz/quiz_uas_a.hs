@@ -1,6 +1,4 @@
 module QuizA where
-import Data.List
-import qualified Data.Char as Char
 
 {- Soal 1 weirdFilter -}
 
@@ -38,4 +36,12 @@ rotabc = map abc
 
 -- >>> rotabc "scyc sukc hcskell"
 -- "saya suka haskell"
+--
+
+{- Soal 3 point-free style last -}
+
+lastPFS = head . reverse
+
+-- >>> lastPFS "Haskell"
+-- 'l'
 --
