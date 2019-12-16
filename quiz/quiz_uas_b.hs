@@ -46,3 +46,4 @@ myLast = foldl (\x y -> y) 0
 
 -- zcb :: Date -> Double -> Currency -> Contract
 -- zcb t x k =  at t (scaleK x (one k))
+
