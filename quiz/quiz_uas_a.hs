@@ -60,8 +60,8 @@ lastPFS = head . reverse
 -- at :: Date -> Contract -> Contract
 -- -- Acquire the contract at specified date
 
-zcb :: Date -> Double -> Currency -> Contract
-zcb t x k =  at t (scaleK x (one k))
+-- zcb :: Date -> Double -> Currency -> Contract
+-- zcb t x k =  at t (scaleK x (one k))
 
 {- Soal 5 Penerapan Functional Style -}
 
@@ -89,6 +89,8 @@ zcb t x k =  at t (scaleK x (one k))
 -- }
 
 {- Soal 8 useReducer example -}
+
+-- const [todos, dispatch] = useReducer(todoReducer, initialState);
 
 {- Soal 9 useState abstraction -}
 
